@@ -216,10 +216,10 @@ def main(_user, _passwd, min_1, max_1):
     # print(response)
     result = f"[{now}]\n账号：{user[:3]}****{user[7:]}\n修改步数（{step}）[" + response['message'] + "]\n"
     print(result)
-    print(‘延时1080开始‘)
+    print(“延时1080开始”)
     time.sleep(60)
     time.sleep(3)
-    print(‘延时1080结束‘)
+    print(“延时1080结束”)
     return result
 
 
