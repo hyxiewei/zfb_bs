@@ -174,7 +174,7 @@ def login(user, password):
     # print(login_token)
     userid = r2["token_info"]["user_id"]
     #1 print("userid获取成功！")
-     print(userid)
+   #  print(userid)
 time.sleep(120)
   print("打印第二个120秒")
     return login_token, userid
