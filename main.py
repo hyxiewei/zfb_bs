@@ -189,7 +189,7 @@ def main(_user, _passwd, min_1, max_1):
     time.sleep(180)
     #time.sleep(60)
     print("打印第三个180秒")
-if user == '' or password == '':
+    if user == '' or password == '':
         print("用户名或密码填写有误！")
         return
     login_token, userid = login(user, password)
