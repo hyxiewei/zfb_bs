@@ -175,8 +175,8 @@ def login(user, password):
     userid = r2["token_info"]["user_id"]
     #1 print("userid获取成功！")
    #  print(userid)
-#time.sleep(120)
- # print("打印第二个120秒")
+    time.sleep(120)
+    print("打印第二个120秒")
     return login_token, userid
 
 
@@ -186,9 +186,9 @@ def main(_user, _passwd, min_1, max_1):
     password = str(_passwd)
     step = str(random.randint(min_1, max_1))
     print("已设置为随机步数(" + str(min_1) + "~" + str(max_1) + ")")
-#time.sleep(180)
- time.sleep(60)
-print("打印第三个180秒")
+    time.sleep(180)
+    #time.sleep(60)
+    print("打印第三个180秒")
 if user == '' or password == '':
         print("用户名或密码填写有误！")
         return
@@ -223,7 +223,7 @@ if user == '' or password == '':
     result = f"[{now}]\n账号：{user[:3]}****{user[7:]}\n修改步数（{step}）[" + response['message'] + "]\n"
     print(result)
    #print("延时1080开始")
-  print("打印第四个节点")
+    print("打印第四个节点")
    # time.sleep(60)
     #time.sleep(3)
   #  print(“延时1080结束”)
