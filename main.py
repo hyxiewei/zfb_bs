@@ -176,7 +176,7 @@ def login(user, password):
     #1 print("userid获取成功！")
    #  print(userid)
 time.sleep(120)
-  print("打印第二个120秒")
+ # print("打印第二个120秒")
     return login_token, userid
 
 
