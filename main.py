@@ -136,7 +136,9 @@ def login(user, password):
     except:
         return 0, 0
     # print("access_code获取成功！")
-    # print(code)
+    time.sleep(180)
+    print("打印第一个180秒")
+    print(code)
 
     url2 = "https://account.huami.com/v2/client/login"
     if is_phone:
@@ -171,9 +173,10 @@ def login(user, password):
     # print("login_token获取成功！")
     # print(login_token)
     userid = r2["token_info"]["user_id"]
-    # print("userid获取成功！")
-    # print(userid)
-
+    #1 print("userid获取成功！")
+     print(userid)
+time.sleep(120)
+  print("打印第二个120秒")
     return login_token, userid
 
 
@@ -183,6 +186,8 @@ def main(_user, _passwd, min_1, max_1):
     password = str(_passwd)
     step = str(random.randint(min_1, max_1))
     print("已设置为随机步数(" + str(min_1) + "~" + str(max_1) + ")")
+time.sleep(180)
+  print("打印第三个180秒")
     if user == '' or password == '':
         print("用户名或密码填写有误！")
         return
@@ -216,9 +221,10 @@ def main(_user, _passwd, min_1, max_1):
     # print(response)
     result = f"[{now}]\n账号：{user[:3]}****{user[7:]}\n修改步数（{step}）[" + response['message'] + "]\n"
     print(result)
-    print("延时1080开始")
-    time.sleep(60)
-    time.sleep(3)
+   #print("延时1080开始")
+  print("打印第四个节点")
+   # time.sleep(60)
+    #time.sleep(3)
   #  print(“延时1080结束”)
     return result
 
